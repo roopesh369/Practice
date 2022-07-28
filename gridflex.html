@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridFlex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: darkslategray;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 5fr 1fr;
+            row-gap: 10px;
+            
+           
+        }
+        .header{
+            grid-column: span 4;
+            background-color: white;
+            
+            
+            
+        }
+        .menubar ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            vertical-align: middle;
+            
+            
+        }
+        .menubar ul li{
+            padding:  .5rem 2rem;
+            list-style: none;
+            color: black;
+        }
+        .menubar ul li:hover{
+            color: white;
+            background-color: blue;
+        }
+        
+        .sidebar{
+            background-color: green;
+        }
+        .content{
+            background-color: blue;
+        }
+        .widget{
+            background-color: greenyellow;
+        }
+        .footer{
+            grid-column: span 4;
+           
+            background-color: brown;
+
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menubar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Products</li>
+                <li>Gallery</li>
+                <li>Blog</li>
+                <li>Tours</li>
+                <li>Contact</li>
+                
+            </ul>
+        </div>
+        </div>
+        <div class="sidebar">
+            Sidebar
+        </div>
+        <div class="content">
+            Content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laudantium illum? Facilis dicta consequatur doloremque quos laudantium nemo magnam commodi!
+        </div>
+        <div class="widget">Widget </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

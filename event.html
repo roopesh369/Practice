@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="event.js"></script>
+    <style>
+        .gp{
+           min-height: 100px;
+            width: auto;
+            background-color: red;
+            margin: 20px;
+            display: grid;
+        }
+        .parent{
+           min-height: 100px;
+            width: auto;
+            background-color: blue;
+            margin: 20px;
+        }
+        .child{
+           min-height: 100px;
+            width: auto;
+            background-color: greenyellow;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gp">
+        <div class="parent" >
+            <div id="child1" class="child">content</div>
+            <div class="child">content</div>
+        </div>
+    </div>
+    <p id="para">Para hai ye</p>
+</body>
+</html>
