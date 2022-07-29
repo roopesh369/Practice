@@ -1,9 +1,9 @@
-var a="hi"
+var aa="hi"
 function test(){
    
    let a="kkk"
     if(true){
-        // var a="bye"
+        var aa="bye"
         console.log(a)
     }
 }

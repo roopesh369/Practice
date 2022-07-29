@@ -41,20 +41,30 @@ console.log(str.split(" ").length);
 
 function longesttWordLengthCount(str) {
   let wCount = 0;
-  let lWordLength = 0;
+  let lwl = 0;
+  let cc = 0; //characters count of each word
   let flagS = true;
   for (let i = 0; i < str.length; i++) {
     if (str[i] != " ") {
+      cc++;
+      if (lwl <= cc) {
+        lwl = cc;
+      }
       if (flagS == true) {
         wCount++;
         flagS = false;
       }
     } else {
       flagS = true;
+      if (lwl <= cc) {
+        lwl = cc;
+      }
+      
+      cc = 0;
     }
   }
+  console.log(lwl);
   return wCount;
 }
 console.log("LONGEST WORD LENGTH COUNT");
-console.log(longesttWordLengthCount(str));
-console.log(str.split(" ").length);
+console.log(longesttWordLengthCount("Roopesh Sharma Is The Greatest"));
