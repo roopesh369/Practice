@@ -55,7 +55,14 @@ console.log(num.reduce(cb))
 function cb(acc, value){
     return acc=acc+value*2
 }
-console.log(items.reduce((acc, value)=>{
-    return acc+=value.price
-}))
 
+
+console.log(items.reduce((pv,cv)=>{
+  return pv+=cv.price
+},0))
+console.log("=====FLATTEN ARRAY----------")
+const arr=[[1,2],[3,4],[5,6]]
+console.log(arr.reduce((pv,cv)=>{
+  return pv.concat(cv)
+
+},[]))
