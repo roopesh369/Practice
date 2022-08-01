@@ -17,7 +17,7 @@ console.log(countVowel(str));
 console.log(str.match(/[AEIOU]/gi).length);
 //////////////////////////////////////////////////////////////////
 ///COUNT WORDS/////////////
-const str2 = "I Love My India";
+
 function countWords(str) {
   let wCount = 0;
   let flagS = true;
@@ -38,6 +38,7 @@ console.log(countWords(str));
 console.log(str.split(" ").length);
 //////////////////////////////////////////////////////////////////
 ///LONGEST COUNT WORDS/////////////
+console.log("Longest Word Length /n");
 
 function longesttWordLengthCount(str) {
   let wCount = 0;
@@ -63,8 +64,8 @@ function longesttWordLengthCount(str) {
       cc = 0;
     }
   }
-  console.log(lwl);
+  console.log("Length of Longest word is= " +lwl);
   return wCount;
 }
-console.log("LONGEST WORD LENGTH COUNT");
+//console.log("LONGEST WORD LENGTH COUNT");
 console.log(longesttWordLengthCount("Roopesh Sharma Is The Greatest"));
