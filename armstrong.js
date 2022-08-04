@@ -13,6 +13,6 @@ const countedNames = names.reduce((allNames, name) => {
   // will receive undefined
   return allNames;
 }, {});
-console.log(countedNames)
+console.log(countedNames);
 // countedNames is:
 // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
