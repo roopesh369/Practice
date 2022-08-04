@@ -31,6 +31,7 @@ let arr1 = [
   "l",
   "c",
   "c",
+  "t",
 ];
 let r = arr
   .filter((e, i, a) => a.indexOf(e) !== i)
