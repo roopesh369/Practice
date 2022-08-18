@@ -1,14 +1,20 @@
 let name1 ={
     firstName: "Roopesh",
     lastName: "Sharma",
-    printFullName: function(){
-        console.log(this.firstName + " " + this.lastName)
+    printFullName: function(city){
+        console.log(this.firstName + " " + this.lastName + " " + city)
     }
 }
-name1.printFullName();
 let name2={
     firstName: "Sachin",
     lastName: 'Tendulkar',
 
 }
-name1.printFullName.call(name2)
+var updateZipCode = function () {
+    console.log(this);
+};
+var zipCode = {
+    zip: '11787'
+};
+updateZipCode.call(zipCode);
+console.log(NaN==={})

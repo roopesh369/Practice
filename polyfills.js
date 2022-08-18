@@ -7,6 +7,8 @@ let stud = [
   { name: "name5", age: 30, city: "Surat" },
 ];
 
+
+
 Array.prototype.myMap = function (cb) {
   let r = [];
   for (let i = 0; i < this.length; i++) r.push(cb(this[i], i, this));
@@ -24,7 +26,7 @@ Array.prototype.myFilter = function (cb) {
   let r = [];
   for (let i = 0; i < this.length; i++)
     if (cb(this[i], i, this)) r.push(this[i]);
-  // if(cb.call(this,this[i],i, this)) r.push(this[i])
+  
   return r;
 };
 console.log("Polyfill Filter");
